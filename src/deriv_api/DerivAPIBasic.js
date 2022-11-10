@@ -44,7 +44,7 @@ export default class DerivAPIBasic extends DerivAPICalls {
         cache      = new InMemory(),
         endpoint   = 'frontend.binaryws.com',
         lang       = 'EN',
-        brand      = '',
+        brand      = 'Ziitel Bot',
         middleware = {},
     } = {}) {
         super();
@@ -113,7 +113,7 @@ export default class DerivAPIBasic extends DerivAPICalls {
         } = this.connectionArgs;
 
         this.connection = new WebSocket(
-            `${endpointUrl.toString()}websockets/v3?app_id=${33336}&l=${lang}&brand=${brand}`,
+            `${endpointUrl.toString()}websockets/v3?app_id=${33445}&l=${lang}&brand=${brand}`,
         );
     }
 
